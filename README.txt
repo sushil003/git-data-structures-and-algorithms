@@ -1,0 +1,1 @@
+# This project contains all Data structures and algorithms collections, problems and solution mainly in Java language.
