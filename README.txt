@@ -1,1 +1,2 @@
 # This project contains all Data structures and algorithms collections, problems and solution mainly in Java language.
+## This is the main project and contains all sub projects for Data structures and algorithms.
