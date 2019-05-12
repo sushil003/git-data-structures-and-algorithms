@@ -1,0 +1,3 @@
+[submodule "git-data-structures-and-algorithms"]
+	path = git-data-structures-and-algorithms
+	url = git@github.com:sushil003/git-data-structures-and-algorithms.git
