@@ -1,5 +1,7 @@
 package problems.practice;
 
+import basicdatastructures.ListNode;
+
 /**
  * Reverse a linked list from position m to n. Do it in one-pass.
  * 

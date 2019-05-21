@@ -1,5 +1,7 @@
 package problems.practice;
 
+import basicdatastructures.ListNode;
+
 /**
  * Reverse a singly linked list.
  * 
