@@ -1,4 +1,4 @@
-package problems.practice;
+package interviewcamp.arraysandstrings;
 
 public class ReverseWords {
 
