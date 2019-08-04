@@ -19,9 +19,9 @@ public class ShortestUnsortedSubarrayInArray {
 	}
 
 	public static int[] shortestUnsortedSubarray(int[] a) {
-		int i, j;
+		int i=0, j=0;
 		
-		for(i=0; i<a.length ; i++) {
+		for(i=0; i<a.length; i++) {
 			if(a[i+1] < a[i]) {
 				break;
 			}
