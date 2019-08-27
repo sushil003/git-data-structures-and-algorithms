@@ -1,4 +1,4 @@
-package problems.practice;
+package interviewcamp.recursionandbacktracking;
 
 import java.util.Arrays;
 
