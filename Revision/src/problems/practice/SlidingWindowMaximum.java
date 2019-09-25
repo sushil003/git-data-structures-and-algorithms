@@ -1,4 +1,8 @@
 package problems.practice;
+
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Return the max sliding window.
 
@@ -23,9 +27,53 @@ Window position                Max
 public class SlidingWindowMaximum {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		
 	}
+	
+	  // Monotonically Decreasing Queue O(n), O(n)
+    public int[] maxSlidingWindowUsingMonotonicallyDecreasingQueue(int[] nums, int k) {
+        if (nums.length == 0) return new int[0];
+        
+        MonoDecreasingQueue monoDecreasingQueue = new MonoDecreasingQueue();
+        int[] result = new int[nums.length - k + 1];
+        int resultIndex = 0;
+        for (int i = 0; i < nums.length; i++) {
+            monoDecreasingQueue.offer(nums[i]);
+            if (i >= k - 1) {
+                result[resultIndex++] = monoDecreasingQueue.peek();
+                if (monoDecreasingQueue.peek() == nums[i - k + 1]) {
+                    monoDecreasingQueue.poll();
+                }
+            }
+        }
+        
+        return result;
+    }
+
+    class MonoDecreasingQueue {
+    
+    private Deque<Integer> queue;
+    
+    public MonoDecreasingQueue() {
+        queue = new ArrayDeque<>();
+    }
+        
+    public void offer(int data) {
+        while (!queue.isEmpty() && queue.peekLast() < data) {
+            queue.pollLast();
+        }
+        queue.offerLast(data);
+    }
+    
+    public void poll() {
+        queue.pollFirst();
+    }
+    
+    public Integer peek() {
+        return queue.peekFirst();
+    } 
+} 
 
 	public int[] maxSlidingWindow(int[] nums, int k) {
 
