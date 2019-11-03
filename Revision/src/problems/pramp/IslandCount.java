@@ -18,7 +18,7 @@ package problems.pramp;
  * Example:
  * 
  * input: binaryMatrix = [ [0, 1, 0, 1, 0], [0, 0, 1, 1, 1], [1, 0, 0, 1, 0],
- * [0, 1, 1, 0, 0], [1, 0, 1, 0, 1]]
+ * [0, 1, 1, 0, 0], [1, 0, 1, 0, 1]  ]s
  * 
  * output: 6 # since this is the number of islands in binaryMatrix. # See all 6
  * islands color-coded below. alt
