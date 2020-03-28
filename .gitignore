@@ -1,2 +1,7 @@
 */bin
 Revision/.settings/org.eclipse.core.resources.prefs
+*.idea/*
+*Revision.iml*
+*out/*
+Revision/.idea/
+Revision/out/
