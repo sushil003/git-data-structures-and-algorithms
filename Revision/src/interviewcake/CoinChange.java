@@ -8,8 +8,10 @@ package interviewcake;
 public class CoinChange {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		int[] a = {2,4,5};
+		
+		System.out.println(changePossibilitiesBottomUp(9,a));
 	}
 
 	public static int changePossibilitiesBottomUp(int amount, int[] denominations) {
